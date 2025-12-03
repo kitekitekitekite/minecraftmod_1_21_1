@@ -11,9 +11,9 @@ public class Moditems {
     public static final DeferredRegister<Item> ITEMS =
         DeferredRegister.create(ForgeRegistries.ITEMS, ExampleMod.MODID);
 
-    public static final RegistryObject<Item> BLUELIGHTSABERCRYSTAL = ITEMS.register("blue lightsaber crystal", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> REDLIGHTSABERCRYSTAL = ITEMS.register("red lightsaber crystal", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BLUE_LIGHTSABER_CRYSTAL = ITEMS.register("blue_lightsaber_crystal", () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> RED_LIGHTSABER_CRYSTAL = ITEMS.register("red_lightsaber_crystal", () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

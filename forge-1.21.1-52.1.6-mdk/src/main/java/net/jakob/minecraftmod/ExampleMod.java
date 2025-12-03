@@ -1,6 +1,7 @@
 package net.jakob.minecraftmod;
 
 import com.mojang.logging.LogUtils;
+import net.jakob.minecraftmod.block.ModBlocks;
 import net.jakob.minecraftmod.item.Moditems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -83,6 +84,7 @@ public class ExampleMod
         MinecraftForge.EVENT_BUS.register(this);
 
         Moditems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -107,10 +109,12 @@ public class ExampleMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(Moditems.BLUELIGHTSABERCRYSTAL);
-            if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-                event.accept(Moditems.REDLIGHTSABERCRYSTAL);
-            }
+            event.accept(Moditems.BLUE_LIGHTSABER_CRYSTAL);
+            event.accept(Moditems.RED_LIGHTSABER_CRYSTAL);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.TATOOINE_BUILDING_BLOCK);
         }
     }
 

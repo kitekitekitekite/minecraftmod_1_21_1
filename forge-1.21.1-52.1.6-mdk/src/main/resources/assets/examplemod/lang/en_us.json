@@ -1,5 +1,7 @@
 {
-  "item.examplemod.alexandrite" : "Blue Lightsaber Crystal",
+  "item.examplemod.blue_lightsaber_crystal" : "Blue Lightsaber Crystal",
 
-  "item.examplemod.alexandrite" : "Red Lightsaber Crystal"
+  "item.examplemod.red_lightsaber_crystal" : "Red Lightsaber Crystal",
+
+  "block.examplemod.tatooine_building_block": "Tatooine Brick"
 }
