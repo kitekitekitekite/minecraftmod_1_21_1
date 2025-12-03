@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:sea_lantern"
+    },
+    "B":{
+      "item": "minecraft:diamond_block"
+    },
+    "C":{
+      "item": "minecraft:obsidian"
+    },
+    "X": {
+      "item": "minecraft:prismarine_shard"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "XCX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "examplemod:blue_lightsaber_crystal"
+  }
+}
