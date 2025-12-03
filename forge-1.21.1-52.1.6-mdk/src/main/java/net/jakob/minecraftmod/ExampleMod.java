@@ -1,6 +1,7 @@
 package net.jakob.minecraftmod;
 
 import com.mojang.logging.LogUtils;
+import net.jakob.minecraftmod.item.Moditems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -81,6 +82,8 @@ public class ExampleMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        Moditems.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -102,11 +105,17 @@ public class ExampleMod
     }
 
     // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event)
-    {
-//        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
-//            event.accept(EXAMPLE_BLOCK_ITEM);
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(Moditems.BLUELIGHTSABERCRYSTAL);
+            if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+                event.accept(Moditems.REDLIGHTSABERCRYSTAL);
+            }
+        }
     }
+
+
+
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
