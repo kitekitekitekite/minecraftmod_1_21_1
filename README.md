@@ -9,7 +9,7 @@ Lightsabers: craftable Red and blue lightsaber items
 
  - Custom sounds for ignite, swing, and closing of the lightsabers
 
- - better damage than netherite swords
+ - Better damage than netherite swords
 
  - Shown in the combat tab of the creative inventory
 
@@ -30,7 +30,7 @@ _____________________________________________________________________________
 
  - Sith-Lord Zombie Reskin
 
-  - all zombies reskinned with a custom "Darth Grimon" texture file
+  - All zombies reskinned with a custom "Darth Grimon" texture file
 
    - Default zombie behavior preserved
 
