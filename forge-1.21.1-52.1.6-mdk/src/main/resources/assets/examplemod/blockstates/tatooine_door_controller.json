@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": {
+      "model": "examplemod:block/tatooine_door_controller"
+    }
+
+  }
+}

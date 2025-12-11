@@ -1,0 +1,39 @@
+{
+  "cantina": {
+    "sounds": [
+      {
+        "name": "examplemod:cantina",
+        "stream": true
+      }
+    ]
+  },
+  "lightsaber_ignite": {
+    "sounds": [
+      {
+        "name": "examplemod:lightsaber_ignite"
+      }
+    ]
+  },
+  "lightsaber_close": {
+    "sounds": [
+      {
+        "name": "examplemod:lightsaber_close"
+      }
+    ]
+  },
+  "lightsaber_swing": {
+    "sounds": [
+      {
+        "name": "examplemod:lightsaber_swing"
+      }
+    ]
+  },
+  "lightsaber_idle": {
+    "sounds": [
+      {
+        "name": "examplemod:lightsaber_idle",
+        "stream": true
+      }
+    ]
+  }
+}

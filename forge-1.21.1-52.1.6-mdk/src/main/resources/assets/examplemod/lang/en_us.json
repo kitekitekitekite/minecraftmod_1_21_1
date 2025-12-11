@@ -3,5 +3,14 @@
 
   "item.examplemod.red_lightsaber_crystal" : "Red Lightsaber Crystal",
 
-  "block.examplemod.tatooine_building_block": "Tatooine Brick"
+  "block.examplemod.tatooine_building_block": "Tatooine Brick",
+
+  "block.examplemod.tatooine_door_controller": "Door Controller",
+
+  "item.examplemod.cantina_music_disc": "Cantina",
+
+  "item.examplemod.blue_lightsaber": "Blue Lightsaber",
+
+  "item.examplemod.red_lightsaber": "Red Lightsaber"
+
 }

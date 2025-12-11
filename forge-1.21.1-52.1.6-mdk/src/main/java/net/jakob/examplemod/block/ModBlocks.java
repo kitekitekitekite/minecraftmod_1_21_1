@@ -1,7 +1,7 @@
-package net.jakob.minecraftmod.block;
+package net.jakob.examplemod.block;
 
-import net.jakob.minecraftmod.ExampleMod;
-import net.jakob.minecraftmod.item.Moditems;
+import net.jakob.examplemod.ExampleMod;
+import net.jakob.examplemod.item.Moditems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -18,6 +18,10 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, ExampleMod.MODID);
 
     public static final RegistryObject<Block> TATOOINE_BUILDING_BLOCK = registerBlock("tatooine_building_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+            ));
+
+    public static final RegistryObject<Block>  TATOOINE_DOOR_CONTROLLER = registerBlock("tatooine_door_controller",
             () -> new Block(BlockBehaviour.Properties.of()
             ));
 
