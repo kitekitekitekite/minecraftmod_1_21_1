@@ -2,6 +2,8 @@
 
 Minecraft Forge mod final java project I made for Minecraft 1.21.1 that adds Star Wars themed content.
 
+https://www.youtube.com/watch?v=635yTBbAMk8 showcase vid
+
  **Features**
 ____________________________________________________________________________
 
